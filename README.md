@@ -8,13 +8,13 @@ For macOS use
 brew install git
 ```
 
-For Debian based distros use
+For Debian-based distros use
 
 ```
 sudo apt install git
 ```
 
-For Arch based distros use
+For Arch-based distros use
 
 ```
 sudo pacman -S git
@@ -28,17 +28,18 @@ For macOS use
 brew install stow
 ```
 
-For Debian based distros use
+For Debian-based distros use
 
 ```
 sudo apt install stow
 ```
 
-For Arch based distros use
+For Arch-based distros use
 
 ```
 sudo pacman -S stow
 ```
+
 # Installation
 
 Clone the repo to your $HOME directory and `cd` into the dotfiles directory
