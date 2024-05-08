@@ -1,0 +1,20 @@
+require("core.lazy")
+
+-- THEME
+vim.opt.background = "dark"
+
+-- WINDOW
+vim.opt.title = true
+vim.opt.cursorline = true
+vim.wo.number = true
+vim.wo.wrap = false
+
+-- TABS && SPACES
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.shiftround = true
+vim.opt.expandtab = true
+vim.opt.backspace = "2"
+
+-- MISC
+vim.cmd [[set noswapfile ]]
