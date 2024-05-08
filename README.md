@@ -42,7 +42,7 @@ sudo pacman -S stow
 
 # Installation
 
-Clone the repo to your $HOME directory and `cd` into the dotfiles directory
+First clone the repo to your $HOME directory and `cd` into the dotfiles directory
 
 ```
 git clone https://github.com/davisssamuel/dotfiles.git && cd ~/dotfiles
