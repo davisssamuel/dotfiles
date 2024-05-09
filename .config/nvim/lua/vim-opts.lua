@@ -1,5 +1,6 @@
 -- WINDOW
 vim.cmd("set number")
+vim.cmd("set relativenumber")
 vim.cmd("set nowrap")
 vim.cmd("set cursorline")
 
@@ -12,4 +13,4 @@ vim.cmd("set backspace=2")
 vim.cmd("set shiftround")
 
 vim.g.mapleader = " "
-vim.keymap.set("n", "<C-j>", ":ter<CR>", {})
+-- vim.keymap.set("n", "<C-j>", ":ter<CR>", {})
