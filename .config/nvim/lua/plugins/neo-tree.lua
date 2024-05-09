@@ -9,7 +9,7 @@ return {
 	},
 	config = function()
 
-		-- KEYMAPS
+		-- keymaps
 		vim.keymap.set("n", "<C-b>", ":Neotree toggle<CR>", {})
 	end,
 }
