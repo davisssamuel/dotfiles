@@ -30,12 +30,12 @@ style = "Regular"
 
 [window]
 decorations = "full"
-dynamic_padding = false
+option_as_alt = "both"
 
 [window.dimensions]
 columns = 80
 lines = 24
 
 [window.padding]
-x = 7
-y = 5
+x = 8
+y = 4

@@ -1,15 +1,12 @@
-vim.g.mapleader = " "
-
 -- appearance
-vim.cmd("set number")
-vim.cmd("set relativenumber")
-vim.cmd("set nowrap")
-vim.cmd("set cursorline")
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.nowrap = true
+vim.o.cursorline = true
 
 -- tabs and spaces
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set backspace=2")
-vim.cmd("set shiftround")
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.softtabstop = 2
+vim.o.shiftround = true
