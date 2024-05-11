@@ -9,15 +9,23 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "jsonls", },
+        ensure_installed = {
+          "lua_ls",
+          "jsonls",
+          "marksman",
+        },
       })
     end,
   },
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({})
+      local config = require("lspconfig")
+
+      -- languages
+      config.lua_ls.setup({})
+      config.jsonls.setup({})
+      config.marksman.setup({})
     end,
   },
 }
