@@ -28,3 +28,7 @@ mode.select = "SELECT"
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal]
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
