@@ -32,3 +32,9 @@ hidden = false
 [keys.normal]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
+
+[keys.normal."["]
+"[" = "goto_file_start"
+
+[keys.normal."]"]
+"]" = "goto_file_end"
