@@ -30,6 +30,7 @@ mode.select = "SELECT"
 hidden = false
 
 [keys.normal]
+"y" = ["yank", "yank_to_clipboard"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 
@@ -38,3 +39,6 @@ hidden = false
 
 [keys.normal."]"]
 "]" = "goto_file_end"
+
+[keys.select]
+"y" = ["yank", "yank_to_clipboard"]
