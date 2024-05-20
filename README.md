@@ -1,5 +1,7 @@
 # Requirements
 
+Managing these dotfiles requires having [git](https://git-scm.com/) and [stow](https://www.gnu.org/software/stow/) installed.
+
 ## git
 
 For macOS use
