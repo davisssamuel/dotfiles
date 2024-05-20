@@ -63,7 +63,7 @@ Finally, use Stow to create symlinks to these dotfiles
 stow .
 ```
 
-NOTE: if dotfiles that are also present in this repo were not backed-up or removed, Stow will not create symlinks and throw a conflict error. Use the adopt flag to override these dotfiles with your own and avoid conflicts
+NOTE: if your dotfiles are also present in this repo and were not backed-up or removed, Stow will not create symlinks and throw a conflict error. Use the adopt flag to override these dotfiles with your own and avoid conflicts
 
 ```
 stow --adopt .
