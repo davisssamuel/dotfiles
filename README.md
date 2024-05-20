@@ -44,13 +44,19 @@ sudo pacman -S stow
 
 # Installation
 
-First clone the repo to your $HOME directory and `cd` into the dotfiles directory
+First, clone the repo to your $HOME directory and `cd` into the dotfiles directory
 
 ```
 git clone https://github.com/davisssamuel/dotfiles.git && cd ~/dotfiles
 ```
 
-Then use Stow to create symlinks to the dotfiles
+Next, backup (recommended) or remove current dotfiles 
+
+```
+mv ~/.zshrc ~/.zshrc.bak
+```
+
+Finally, use Stow to create symlinks to the dotfiles
 
 ```
 stow .
