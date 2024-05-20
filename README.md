@@ -45,7 +45,7 @@ sudo pacman -S stow
 # Installation
 
 
-First, backup (recommended) or remove current dotfiles 
+First, backup (recommended) or remove current dotfiles, e.g. backing up `.zshrc`
 
 ```
 mv ~/.zshrc ~/.zshrc.bak
@@ -61,4 +61,10 @@ Finally, use Stow to create symlinks to these dotfiles
 
 ```
 stow .
+```
+
+NOTE: if dotfiles that are also present in this repo were not backed-up or removed, Stow will not create symlinks and throw a conflict error. Use the adopt flag to override these dotfiles with your own and avoid conflicts
+
+```
+stow --adopt .
 ```
