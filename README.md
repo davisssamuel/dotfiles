@@ -44,7 +44,7 @@ sudo pacman -S stow
 
 ## bash
 
-NOTE: if you are not using zsh, add the following lines to your `.bashrc` for the same prompt
+NOTE: if you are using bash instead of zsh, add the following lines to your `.bashrc` for the same prompt
 
 ```bash
 source $HOME/.git-prompt.sh
