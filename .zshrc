@@ -1,15 +1,15 @@
 # homebrew
 export PATH="/usr/local/sbin:$PATH"
 
+# aliases
+source $HOME/.aliases.sh
+
 # prompt
 source $HOME/dotfiles/.git-prompt.sh
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 precmd() { __git_ps1 "[%n@%m %1~" "%s]"$'\n'"%# " } # for zsh only
   
-# aliases
-source $HOME/.aliases.sh
-
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
