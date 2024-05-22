@@ -42,6 +42,17 @@ For Arch-based distros use
 sudo pacman -S stow
 ```
 
+## bash
+
+NOTE: if you are not using zsh, add the following lines to your `.bashrc` for the same prompt
+
+```bash
+source $HOME/.git-prompt.sh
+export GIT_PS1_SHOWCOLORHINTS=true
+export GIT_PS1_SHOWDIRTYSTATE=true
+PROMPT_COMMAND='__git_ps1 "[\u@\h \W" "]\n\$ "'
+```
+
 # Installation
 
 
