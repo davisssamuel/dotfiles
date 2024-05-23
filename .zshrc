@@ -8,7 +8,7 @@ source $HOME/.aliases.sh
 source $HOME/dotfiles/.git-prompt.sh
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
-precmd() { __git_ps1 "[%n@%m %1~" "%s]"$'\n'"%# " } # for zsh only
+precmd() { __git_ps1 "[%n@%m %1~" "%s]"$'\n'"%(?..%F{red})%#%f " }
   
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
