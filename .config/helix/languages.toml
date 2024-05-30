@@ -1,5 +1,7 @@
 [language-server]
 biome = { command = "biome", args = ["lsp-proxy"] }
+pyright = { command = "pyright-langserver", args = ["--stdio"] }
+ruff = { command = "ruff-lsp" }
 
 [[language]]
 name = "javascript"
@@ -24,3 +26,8 @@ language-servers = [ { name = "typescript-language-server", except-features = [ 
 [[language]]
 name = "json"
 language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "python"
+language-servers = [ { name = "pyright", except-features = [ "format", "diagnostics" ] }, "ruff" ]
+auto-format = true

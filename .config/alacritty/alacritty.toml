@@ -77,3 +77,9 @@ lines = 24
 [window.padding]
 x = 8
 y = 4
+
+# [keyboard]
+# bindings = [
+#   { key = "ArrowRight", mods = "Option", mode = "Alt", action = "WordRight"},
+#   { key = "ArrowLeft", mods = "Option", mode = "Alt", action = "WordLeft"},
+# ]
