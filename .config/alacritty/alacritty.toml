@@ -61,6 +61,8 @@ style = "Regular"
 [window]
 decorations = "full"
 option_as_alt = "both"
+# opacity = 0.5
+# blur = true
 
 [window.dimensions]
 columns = 80
