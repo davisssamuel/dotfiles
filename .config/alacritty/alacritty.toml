@@ -58,6 +58,12 @@ size = 14.0
 family = "Hack Nerd Font"
 style = "Regular"
 
+[font.bold]
+style = "Regular"
+
+[font.italic]
+style = "Regular"
+
 [window]
 decorations = "full"
 option_as_alt = "both"
