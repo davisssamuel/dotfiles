@@ -1,14 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[\\[](green)\
 $username\
 $hostname\
 $directory\
 $git_branch\
 $git_status\
-[\\]](green)\
-\n\
+$line_break\
 $character"""
 
 [username]
@@ -22,7 +20,7 @@ style = "green"
 ssh_only = false
 
 [character]
-success_symbol = "[\\$](green)"
+success_symbol = "[\\$](none)"
 error_symbol = "[\\$](red)"
 
 [directory]
