@@ -10,25 +10,25 @@ $line_break\
 $character"""
 
 [username]
-format = "[$user]($style)"
-style_user = "green"
+format = "[◖](black)[$user]($style)"
+style_user = "bg:black"
 show_always = true
 
 [hostname]
-format = "[@$hostname]($style) "
-style = "green"
+format = "[@$hostname]($style)[◗](black) "
+style = "bg:black"
 ssh_only = false
 
 [character]
-success_symbol = "[\\$](yellow)"
-error_symbol = "[\\$](red)"
+success_symbol = " [>](white)"
+error_symbol = " [>](red)"
 
 [directory]
 format = "[$path]($style) "
 style = "white"
 
 [git_branch]
-format = "on [$branch]($style) "
+format = "[$branch]($style) "
 style = "purple"
 
 [git_status]
