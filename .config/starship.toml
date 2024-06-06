@@ -20,15 +20,15 @@ style = "green"
 ssh_only = false
 
 [character]
-success_symbol = "[\\$](none)"
+success_symbol = "[\\$](yellow)"
 error_symbol = "[\\$](red)"
 
 [directory]
 format = "[$path]($style) "
-style = "none"
+style = "white"
 
 [git_branch]
-format = "[$branch]($style) "
+format = "on [$branch]($style) "
 style = "purple"
 
 [git_status]
