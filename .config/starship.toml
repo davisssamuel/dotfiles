@@ -10,12 +10,12 @@ $line_break\
 $character"""
 
 [username]
-format = "[◖](black)[$user]($style)"
+format = "[\u25D6](black)[$user]($style)"
 style_user = "bg:black"
 show_always = true
 
 [hostname]
-format = "[@$hostname]($style)[◗](black) "
+format = "[@$hostname]($style)[\u25D7](black) "
 style = "bg:black"
 ssh_only = false
 
