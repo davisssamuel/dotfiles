@@ -1,10 +1,10 @@
 # homebrew
 export PATH="/usr/local/sbin:$PATH"
 
-# aliases
-source $HOME/.aliases.sh
+# ssh aliases
+source $HOME/.ssh-aliases.sh
 
-# prompt
+# custom prompt
 # source $HOME/dotfiles/.git-prompt.sh
 # export GIT_PS1_SHOWCOLORHINTS=true
 # export GIT_PS1_SHOWDIRTYSTATE=true
@@ -44,5 +44,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # android studio
 export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# starship 
+# starship prompt 
 eval "$(starship init zsh)"
