@@ -2,6 +2,8 @@
 
 To use these dotfiles, you need [git](https://git-scm.com/) and [stow](https://www.gnu.org/software/stow/) installed.
 
+To use the prompt in these dotfiles, you need [starship](https://starship.rs/) installed.
+
 ## git
 
 For macOS use
@@ -40,17 +42,6 @@ For Arch-based distros use
 
 ```
 sudo pacman -S stow
-```
-
-## bash
-
-NOTE: if you are using bash instead of zsh, add the following lines to your `.bashrc` for the same prompt
-
-```bash
-source $HOME/.git-prompt.sh
-export GIT_PS1_SHOWCOLORHINTS=true
-export GIT_PS1_SHOWDIRTYSTATE=true
-PROMPT_COMMAND='__git_ps1 "[\u@\h \W" "]\n\$ "'
 ```
 
 # Installation
