@@ -10,13 +10,11 @@ $line_break\
 $character"""
 
 [username]
-format = "[\u25D6](black)[$user]($style)"
-style_user = "bg:black"
+format = "[\u25D6](black)[$user](bg:black)"
 show_always = true
 
 [hostname]
-format = "[@$hostname]($style)[\u25D7](black) "
-style = "bg:black"
+format = "[@$hostname](bg:black)[\u25D7](black) "
 ssh_only = false
 
 [character]
@@ -24,16 +22,13 @@ success_symbol = "[\u276F](white)"
 error_symbol = "[\u276F](red)"
 
 [directory]
-format = "[$path]($style) "
-style = "white"
+format = "[$path](white) "
 
 [git_branch]
-format = "[$branch]($style) "
-style = "purple"
+format = "[$branch](purple) "
 
 [git_status]
-format = "[$all_status$ahead_behind]($style)"
-style = "red"
+format = "[$all_status$ahead_behind](red)"
 ahead = ">"
 behind = "<"
 diverged = "<>"
