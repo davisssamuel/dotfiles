@@ -20,8 +20,8 @@ style = "bg:black"
 ssh_only = false
 
 [character]
-success_symbol = " [>](white)"
-error_symbol = " [>](red)"
+success_symbol = "[\u276F](white)"
+error_symbol = "[\u276F](red)"
 
 [directory]
 format = "[$path]($style) "
