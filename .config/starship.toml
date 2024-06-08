@@ -26,7 +26,6 @@ error_symbol = "[\u276F](red)"
 [directory]
 format = "[$path]($style) "
 style = "white"
-truncate_to_repo = false
 
 [git_branch]
 format = "[$branch]($style) "
