@@ -4,7 +4,6 @@ theme = "rasmus"
 line-number = "relative"
 cursorline = true
 true-color = true
-popup-border = "all"
 
 [editor.cursor-shape]
 insert = "bar"
