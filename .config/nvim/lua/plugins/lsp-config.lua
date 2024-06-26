@@ -9,10 +9,15 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
+        -- installed LSPs
+        -- NOTE: be sure to add config.<lsp>.setup({})
+        -- to installed LSPs section below
         ensure_installed = {
           "lua_ls",
-          "jsonls",
           "marksman",
+          "biome",
+          "pyright",
+          "ruff_lsp"
         },
       })
     end,
@@ -21,11 +26,12 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       local config = require("lspconfig")
-
-      -- languages
+      -- installed LSPs 
       config.lua_ls.setup({})
-      config.jsonls.setup({})
       config.marksman.setup({})
+      config.biome.setup({})
+      config.pyright.setup({})
+      config.ruff_lsp.setup({})
     end,
   },
 }
