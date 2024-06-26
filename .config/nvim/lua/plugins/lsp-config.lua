@@ -16,6 +16,7 @@ return {
           "lua_ls",
           "marksman",
           "biome",
+          "clangd",
           "pyright",
           "ruff_lsp"
         },
@@ -30,6 +31,7 @@ return {
       config.lua_ls.setup({})
       config.marksman.setup({})
       config.biome.setup({})
+      config.clangd.setup({})
       config.pyright.setup({})
       config.ruff_lsp.setup({})
     end,
