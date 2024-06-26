@@ -29,6 +29,6 @@ language-servers = [ { name = "vscode-json-language-server", except-features = [
 
 [[language]]
 name = "python"
-language-servers = [ { name = "pyright", except-features = [ "format", "diagnostics" ] }, "ruff" ]
+language-servers = [ { name = "pyright", except-features = [ "format" ] } ]
 formatter = { command = "ruff", args = ["format", "--line-length=200", "--quiet", "-"] }
 auto-format = true
