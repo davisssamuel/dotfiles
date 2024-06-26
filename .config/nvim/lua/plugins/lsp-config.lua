@@ -18,7 +18,8 @@ return {
           "biome",
           "clangd",
           "pyright",
-          "ruff_lsp"
+          "ruff_lsp",
+          "gopls"
         },
       })
     end,
@@ -34,6 +35,7 @@ return {
       config.clangd.setup({})
       config.pyright.setup({})
       config.ruff_lsp.setup({})
+      config.gopls.setup({})
     end,
   },
 }
