@@ -4,13 +4,14 @@ format = """
 $character\
 $username\
 $hostname\
+[:](white)\
 $directory\
 $git_branch\
 $git_status\
 [ % ](white)"""
 
 [username]
-format = "[$user:](white)"
+format = "[$user](white)"
 show_always = true
 
 [hostname]
