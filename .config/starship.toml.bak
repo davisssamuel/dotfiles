@@ -1,36 +1,34 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# $hostname\
-# $line_break\
-
 format = """
-$character\
 $username\
+$hostname\
 $directory\
 $git_branch\
 $git_status\
-[ % ](white)"""
+$line_break\
+$character"""
 
 [username]
-format = "[$user:](white)"
+format = "[\u25D6](black)[$user](bg:black)"
 show_always = true
 
 [hostname]
-format = "[$hostname](white)"
+format = "[@$hostname](bg:black)[\u25D7](black) "
 ssh_only = false
 
 [character]
-success_symbol = "[\u25CB](white)"
-error_symbol = "[\u25CB](red)"
+success_symbol = "[\u276F](white)"
+error_symbol = "[\u276F](red)"
 
 [directory]
-format = " [$path](white)"
+format = "[$path](white) "
 
 [git_branch]
-format = " [$branch](purple)"
+format = "[$branch](purple) "
 
 [git_status]
-format = " [$all_status$ahead_behind](red)"
+format = "[$all_status$ahead_behind](red)"
 ahead = ">"
 behind = "<"
 diverged = "<>"

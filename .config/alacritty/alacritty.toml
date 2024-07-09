@@ -55,7 +55,7 @@ white      = '#eaeaea'
 size = 14.0
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "Hack" 
 style = "Regular"
 
 [font.bold]
