@@ -7,7 +7,7 @@ $hostname\
 [:](white)\
 $directory\
 $git_branch\
-$git_status\
+${custom.git_status}\
 [ % ](white)"""
 
 [username]
@@ -35,3 +35,8 @@ behind = "<"
 diverged = "<>"
 renamed = "r"
 deleted = "x"
+
+# temporary fix for git status displaying on clean working tree
+[custom.git_status]
+when = """ [[ $(git status -s) != '' ]] """ 
+format = " [!](red)"
