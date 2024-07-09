@@ -29,6 +29,7 @@ format = " [$path](white)"
 format = " [$branch](purple)"
 
 [git_status]
+disabled = true
 format = " [$all_status$ahead_behind](red)"
 ahead = ">"
 behind = "<"
