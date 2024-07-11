@@ -70,3 +70,22 @@ NOTE: if your dotfiles are also present in this repo and were not backed-up or r
 ```
 stow --adopt .
 ```
+
+# Options
+
+If you want the same prompt but do not want to install starship, you may use the git prompt script provided. To do so, in your `.bashrc` or `.zshrc` file, replace `eval "$(starship init zsh)"` with
+
+```
+source $HOME/.git-prompt.sh
+export GIT_PS1_SHOWCOLORHINTS=true
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_UNTRACKEDFILES=true
+NEWLINE=$'\n'
+CIRCLE=$'\u25CB'
+
+# for bash
+PROMPT_COMMAND='__git_ps1 "\n$CIRCLE \u: \W" " % " " %s"'
+
+# for zsh
+precmd () { __git_ps1 "${NEWLINE}%(?..%F{red})${CIRCLE}%f%n: %1~%F{purple}" "%f %# " " %s" }
+```
