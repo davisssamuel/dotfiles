@@ -1,6 +1,31 @@
 live_config_reload = true
 
-# RASMUS COLORSCHEME
+[font]
+size = 14.0
+
+[font.normal]
+family = "Menlo" 
+style  = "Regular"
+
+[font.bold]
+style = "Regular"
+
+[font.italic]
+style = "Regular"
+
+[window]
+decorations   = "full"
+option_as_alt = "both"
+
+[window.dimensions]
+columns = 80
+lines   = 24
+
+[window.padding]
+x = 8
+y = 4
+
+# rasmus colorscheme
 [colors.primary]
 background = '#1a1a19'
 foreground = '#d1d1d1'
@@ -28,28 +53,3 @@ blue       = '#a6cded'
 magenta    = '#f7b4e1'
 cyan       = '#94c9b2'
 white      = '#eaeaea'
-
-[font]
-size = 14.0
-
-[font.normal]
-family = "Menlo" 
-style  = "Regular"
-
-[font.bold]
-style = "Regular"
-
-[font.italic]
-style = "Regular"
-
-[window]
-decorations   = "full"
-option_as_alt = "both"
-
-[window.dimensions]
-columns = 80
-lines   = 24
-
-[window.padding]
-x = 8
-y = 4
