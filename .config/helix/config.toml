@@ -13,10 +13,9 @@ select = "underline"
 [editor.statusline]
 left = [
   "mode", 
-  "version-control",
   "read-only-indicator",
-  "file-name", 
-  "file-modification-indicator", 
+  "file-base-name",
+  "file-modification-indicator",
 ]
 right = [ 
   "diagnostics",
@@ -24,7 +23,7 @@ right = [
 ]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
-mode.select = "SELECT"
+mode.select = "VISUAL"
 
 [editor.file-picker]
 hidden = false
@@ -36,12 +35,7 @@ render = true
 "y" = ["yank", "yank_to_clipboard"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
-
-[keys.normal."["]
-"[" = "goto_file_start"
-
-[keys.normal."]"]
-"]" = "goto_file_end"
+"G" = "goto_file_end"
 
 [keys.select]
 "y" = ["yank", "yank_to_clipboard"]
