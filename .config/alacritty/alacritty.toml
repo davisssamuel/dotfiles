@@ -25,6 +25,12 @@ lines   = 24
 x = 8
 y = 4
 
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
 # rasmus colorscheme
 [colors.primary]
 background = '#1a1a19'
