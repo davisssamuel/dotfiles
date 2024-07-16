@@ -46,7 +46,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_UNTRACKEDFILES=true
 NEWLINE=$'\n'
 CIRCLE=$'\u25CB'
-precmd () { __git_ps1 "${NEWLINE}%(?..%F{red})${CIRCLE}%f %n: %1~%F{purple}" "%f %# " " %s" }
+precmd () { __git_ps1 "${NEWLINE}%(?..%F{red})${CIRCLE}%f %n: %1~" " %# " " %s" }
 
 # starship prompt
 # eval "$(starship init zsh)"
