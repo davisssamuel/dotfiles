@@ -87,5 +87,5 @@ CIRCLE=$'\u25CB'
 PROMPT_COMMAND='__git_ps1 "\n$CIRCLE \u: \W" " % " " %s"'
 
 # for zsh
-precmd () { __git_ps1 "${NEWLINE}%(?..%F{red})${CIRCLE}%f%n: %1~%F{purple}" "%f %# " " %s" }
+precmd () { __git_ps1 "${NEWLINE}%(?..%F{red})${CIRCLE}%f %n: %1~%F{purple}" "%f %# " " %s" }
 ```
