@@ -4,7 +4,7 @@ live_config_reload = true
 size = 14.0
 
 [font.normal]
-family = "Hack Nerd Font" 
+family = "JetBrains Mono" 
 style  = "Regular"
 
 [font.bold]
