@@ -4,7 +4,7 @@ live_config_reload = true
 size = 14.0
 
 [font.normal]
-family = "Hack Nerd Font" 
+family = "Menlo" 
 style  = "Regular"
 
 [font.bold]
@@ -29,6 +29,7 @@ y = 4
 bindings = [
   { key = "Right", mods = "Alt", chars = "\u001BF" },
   { key = "Left",  mods = "Alt", chars = "\u001BB" },
+  { key = "Tab",   mods = "Control", action = "SelectNextTab" }
 ]
 
 # rasmus colorscheme
