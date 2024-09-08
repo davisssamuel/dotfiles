@@ -1,10 +1,10 @@
 live_config_reload = true
 
 [font]
-size = 14.0
+size = 12.0
 
 [font.normal]
-family = "Menlo" 
+family = "Roboto Mono" 
 style  = "Regular"
 
 [font.bold]
@@ -14,8 +14,7 @@ style = "Regular"
 style = "Regular"
 
 [window]
-decorations   = "full"
-option_as_alt = "both"
+decorations   = "none"
 
 [window.dimensions]
 columns = 80
