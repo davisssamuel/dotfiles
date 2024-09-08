@@ -28,7 +28,6 @@ source $HOME/.git-prompt.sh
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_UNTRACKEDFILES=true
-NEWLINE=$'\n'
-CIRCLE=$'\u25CB'
+newline=$'\n'
 
-precmd () { __git_ps1 "${NEWLINE}%(?..%F{red})${CIRCLE}%f %n: %1~" " %# " " on %s" }
+precmd () { __git_ps1 "${newline}%n: %1~" " %(?..%F{red})%#%f " " on %s" }
