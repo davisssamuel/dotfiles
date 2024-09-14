@@ -3,15 +3,6 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
-# prompt
-source $HOME/.git-prompt.sh
-export GIT_PS1_SHOWCOLORHINTS=true
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_UNTRACKEDFILES=true
-NEWLINE=$'\n'
-
-precmd () { __git_ps1 "${NEWLINE}%n: %1~" " %(?..%F{red})%#%f " " on %s" }
-
 # zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
@@ -34,3 +25,11 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # time command format
 export TIMEFMT=$'\nreal\t%*E'
 
+# prompt
+source $HOME/.git-prompt.sh
+export GIT_PS1_SHOWCOLORHINTS=true
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_UNTRACKEDFILES=true
+NEWLINE=$'\n'
+
+precmd () { __git_ps1 "${NEWLINE}%n: %1~" " %(?..%F{red})%#%f " " on %s" }
