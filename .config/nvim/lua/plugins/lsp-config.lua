@@ -13,13 +13,13 @@ return {
         -- NOTE: be sure to add config.<lsp>.setup({})
         -- to installed LSPs section below
         ensure_installed = {
-          "lua_ls",
-          "marksman",
-          "biome",
-          "clangd",
-          "pyright",
-          "ruff_lsp",
-          "gopls"
+          -- "lua_ls",
+          -- "marksman",
+          -- "biome",
+          -- "clangd",
+          -- "pyright",
+          -- "ruff_lsp",
+          -- "gopls"
         },
       })
     end,
@@ -29,13 +29,13 @@ return {
     config = function()
       local config = require("lspconfig")
       -- installed LSPs 
-      config.lua_ls.setup({})
-      config.marksman.setup({})
-      config.biome.setup({})
-      config.clangd.setup({})
-      config.pyright.setup({})
-      config.ruff_lsp.setup({})
-      config.gopls.setup({})
+      -- config.lua_ls.setup({})
+      -- config.marksman.setup({})
+      -- config.biome.setup({})
+      -- config.clangd.setup({})
+      -- config.pyright.setup({})
+      -- config.ruff_lsp.setup({})
+      -- config.gopls.setup({})
     end,
   },
 }
