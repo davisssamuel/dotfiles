@@ -15,7 +15,7 @@ while true; do
   elif [ ${#NET} -eq 1 ]; then
     WIFI=$'\Uf0921 '
   else
-  	WIFI=$'\Uf092e '
+    WIFI=$'\Uf092e '
   fi 
   xsetroot -name " $WIFI $(date '+%b %d %H:%M') " 
   sleep 10s
