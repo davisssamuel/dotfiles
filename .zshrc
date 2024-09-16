@@ -33,6 +33,3 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # time command format
 export TIMEFMT=$'\nreal\t%*E'
-
-# load completions
-autoload -Uz compinit && compinit
