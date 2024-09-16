@@ -28,8 +28,9 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# completions
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
 # time command format
 export TIMEFMT=$'\nreal\t%*E'
+
+# completions
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+autoload -Uz compinit && compinit
