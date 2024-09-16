@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # set wallpaper
-feh --bg-fill $HOME/wallpapers/gilles-lambert-mSK5nNsAsLY-unsplash.jpg &
+$HOME/.fehbg &
 
 # update status bar 
 while true; do
