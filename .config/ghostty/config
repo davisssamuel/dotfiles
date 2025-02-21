@@ -1,0 +1,15 @@
+# theme and font
+theme = GitHub Dark
+font-family = Iosevka SS08 
+font-size = 14 
+font-feature = -calt, -liga, -dlig 
+
+# cursor
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+cursor-color = #8A949E
+
+# window
+window-padding-x = 8
+background = #0D1116
