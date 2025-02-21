@@ -1,0 +1,13 @@
+[colors.primary]
+background = "#1F1F1F"
+foreground = "#D4D4D4"
+
+[colors.normal]
+black      = "#1F1F1F"
+red        = "#F44747"
+green      = "#C586C0" # vscPink
+yellow     = "#DCDCAA"
+blue       = "#569CD6"
+magenta    = "#C586C0"
+cyan       = "#9CDCFE"
+white      = "#D4D4D4"

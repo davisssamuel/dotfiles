@@ -1,10 +1,12 @@
+[general]
 live_config_reload = true
+import = ["./github_dark_default.toml"]
 
 [font]
 size = 14.0
 
 [font.normal]
-family = "Menlo" 
+family = "JetBrainsMono Nerd Font" 
 style  = "Regular"
 
 [font.bold]
@@ -16,6 +18,8 @@ style = "Regular"
 [window]
 decorations   = "full"
 option_as_alt = "both"
+# opacity = 0.9
+# blur = true
 
 [window.dimensions]
 columns = 80
@@ -32,31 +36,89 @@ bindings = [
   { key = "Tab",   mods = "Control", action = "SelectNextTab" }
 ]
 
+
+# [colors.bright]
+# black = "0x32302f"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+
+
+# hybrid colorscheme
+# [colors.primary]
+# background = "#1D1F21"
+# foreground = "#C5C8C6"
+
+# [colors.cursor]
+# cursor     = "#C5C8C6"
+# text       = "#1D1F21"
+
+# [colors.normal]
+# black      = "#1F1F1F"
+# red        = "#CC6666"
+# green      = "#B5BD68" 
+# yellow     = "#F0C674"
+# blue       = "#81A2BE"
+# magenta    = "#B294BB"
+# cyan       = "#8ABEB7"
+# white      = "#C5C8C6"
+
+# [colors.bright]
+# black      = "#707880" 
+# red        = "#D54E53"
+# green      = "#B9CA4A" 
+# yellow     = "#E7C547"
+# blue       = "#7AA6DA"
+# magenta    = "#C397D8"
+# cyan       = "#70C0B1"
+# white      = "#EAEAEA"
+
+
+# catpuccin gruvbox colorscheme
+# [colors.primary]
+# background = "#1d2021"
+# foreground = "#ebdbb2" #"#a89984"
+
+# [colors.normal]
+# black      = "#1F1F1F"
+# red        = "#ea6962"
+# green      = "#a9b665" # vscPink
+# yellow     = "#DCDCAA"
+# blue       = "#7daea3"
+# magenta    = "#d3869b"
+# cyan       = "#7daea3"
+# white      = "#ebdbb2"
+
+
 # rasmus colorscheme
-[colors.primary]
-background = '#1a1a19'
-foreground = '#d1d1d1'
+# [colors.primary]
+# background = "#1a1a19"
+# foreground = "#d1d1d1"
 
-[colors.cursor]
-text       = '#1a1a19'
-cursor     = '#d1d1d1'
+# [colors.cursor]
+# text       = "#1a1a19"
+# cursor     = "#d1d1d1"
 
-[colors.normal]
-black      = '#333332'
-red        = '#ff968c'
-green      = '#61957f'
-yellow     = '#ffc591'
-blue       = '#8db4d4'
-magenta    = '#de9bc8'
-cyan       = '#7bb099'
-white      = '#d1d1d1'
+# [colors.normal]
+# black      = "#333332"
+# red        = "#ff968c"
+# green      = "#61957f"
+# yellow     = "#ffc591"
+# blue       = "#8db4d4"
+# magenta    = "#de9bc8"
+# cyan       = "#7bb099"
+# white      = "#d1d1d1"
 
-[colors.bright]
-black      = '#4c4c4b'
-red        = '#ffafa5'
-green      = '#7aae98'
-yellow     = '#ffdeaa'
-blue       = '#a6cded'
-magenta    = '#f7b4e1'
-cyan       = '#94c9b2'
-white      = '#eaeaea'
+# [colors.bright]
+# black      = "#4c4c4b"
+# red        = "#ffafa5"
+# green      = "#7aae98"
+# yellow     = "#ffdeaa"
+# blue       = "#a6cded"
+# magenta    = "#f7b4e1"
+# cyan       = "#94c9b2"
+# white      = "#eaeaea"
