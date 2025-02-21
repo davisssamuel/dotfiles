@@ -51,7 +51,7 @@ stow --adopt .
 If you are using bash and want the same prompt, add the following to your `.bashrc`
 
 ```sh
-if [[ ! -f $HOME/.git-prompt.sh ]]; then
+if [ ! -f $HOME/.git-prompt.sh ]; then
     curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > $HOME/.git-prompt.sh
 fi
 source $HOME/.git-prompt.sh
