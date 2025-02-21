@@ -1,10 +1,10 @@
-theme = "rasmus"
+theme = "github_dark"
 
 [editor]
 line-number = "relative"
-cursorline = true
 true-color = true
-rulers = [ 80 ]
+# rulers = [ 80 ]
+end-of-line-diagnostics = "hint"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -14,9 +14,9 @@ select = "underline"
 [editor.statusline]
 left = [
   "mode", 
-  "read-only-indicator",
   "file-base-name",
   "file-modification-indicator",
+  "read-only-indicator",
 ]
 right = [ 
   "diagnostics",
