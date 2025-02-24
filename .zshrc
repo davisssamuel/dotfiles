@@ -3,9 +3,9 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
-# zsh-autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+# completions
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+autoload -Uz compinit && compinit
 
 # history
 HISTFILE=$HOME/.zsh_history
@@ -19,18 +19,19 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# prompt
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr '+'
+zstyle ':vcs_info:git:*' unstagedstr '*'
+zstyle ':vcs_info:git:*' formats ' %F{green}(%b%u%c)%f'
+precmd() { vcs_info }
+setopt prompt_subst; PROMPT=$'\n''%n: %F{blue}%1~%f${vcs_info_msg_0_} %(?..%F{red})\$%f '
+
+# zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 # time command format
 export TIMEFMT=$'\nreal\t%*E'
-
-# prompt
-source $HOME/.git-prompt.sh
-export GIT_PS1_SHOWCOLORHINTS=true
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_UNTRACKEDFILES=true
-NEWLINE=$'\n'
-
-precmd () { __git_ps1 "${NEWLINE}%n: %1~" " %(?..%F{red})%#%f " " on %s" }
-
-# completions
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-autoload -Uz compinit && compinit
