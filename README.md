@@ -50,15 +50,14 @@ stow --adopt .
 
 If you are using bash and want the same prompt, add the following to your `.bashrc`
 
-```
+```sh
+if [ ! -f $HOME/.git-prompt.sh ]; then
+    curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > $HOME/.git-prompt.sh
+fi
 source $HOME/.git-prompt.sh
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_UNTRACKEDFILES=true
-CIRCLE=$'\u25CB'
-
-# for bash
-PROMPT_COMMAND='__git_ps1 "\n$CIRCLE \u: \W" " % " " %s"'
+export GIT_PS1_STATESEPARATOR=''
+PS1=$'\n''\u: \e[34m\W$(__git_ps1 " \e[32m(%s\e[32m)") \e[39m\$ '
 ```
-
-Alternatively, use [starship](https://starship.rs/) with the provided config.
