@@ -1,13 +1,13 @@
-# keybinds
+# Keybinds
 bindkey -e 
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
-# completions
+# Completions
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 autoload -Uz compinit && compinit
 
-# history
+# History
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=5000
 SAVEHIST=5000
@@ -19,7 +19,7 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# prompt
+# Prompt
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
@@ -27,11 +27,15 @@ zstyle ':vcs_info:git:*' stagedstr '+'
 zstyle ':vcs_info:git:*' unstagedstr '*'
 zstyle ':vcs_info:git:*' formats ' %F{green}(%b%u%c)%f'
 precmd() { vcs_info }
-setopt prompt_subst; PROMPT=$'\n''%n: %F{blue}%1~%f${vcs_info_msg_0_} %(?..%F{red})\$%f '
+setopt prompt_subst; PROMPT=$'\n''%n: %F{blue}%1~%f${vcs_info_msg_0_} %(?..%F{red})%#%f '
 
-# zsh-autosuggestions
+# Autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-# time command format
+# Time command format
 export TIMEFMT=$'\nreal\t%*E'
+
+# Editor
+export VISUAL=vim
+export EDITOR='$VISUAL'
