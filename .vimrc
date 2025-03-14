@@ -2,5 +2,5 @@ set number
 set nowrap
 set shiftround
 set autoindent
-set cindent
+set splitright
 syntax on
