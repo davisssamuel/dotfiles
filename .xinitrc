@@ -5,7 +5,7 @@ $HOME/.fehbg &
 
 # Set and update status bar 
 while true; do
-	# get wifi strength
+	# Get wifi strength
 	NET=$(nmcli dev wifi | grep '^[*]' | awk '/*/ {print $9}')
 	if [ ${#NET} -eq 4 ]; then
 		WIFI=$'\Uf0928 '
@@ -18,8 +18,9 @@ while true; do
 	else
 		WIFI=$'\Uf092e '
 	fi 
+	# Concatenate wifi and time
 	xsetroot -name " $WIFI $(date '+%b %d %H:%M') " 
-	sleep 10s
+	sleep 30s
 done &
 
 # Enable window decorations
