@@ -34,7 +34,7 @@ stow --adopt .
 
 # Options
 
-If you are using bash and want the same prompt, add the following to your `.bashrc`
+If you are using bash and want the same prompt, add the following to your `.bashrc`.
 
 ```sh
 if [ ! -f $HOME/.git-prompt.sh ]; then
