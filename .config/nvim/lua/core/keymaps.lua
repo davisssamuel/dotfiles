@@ -1,24 +1,24 @@
 vim.g.mapleader = " "
-
 local map = vim.keymap.set
 
--- oil
-map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- Configure Oil keybinds
+map("n", "-", "<CMD>Oil<CR>", {})
 
--- telescope
-map("n", "<C-p>", function()
-    require("telescope.builtin").find_files()
-end, {})
-
-map("n", "<C-f>", function()
-    require("telescope.builtin").live_grep()
-end, {})
-
--- lsp
-map("n", "K", vim.lsp.buf.hover, {})
-map("n", "<leader>gD", vim.lsp.buf.declaration, {})
-map("n", "<leader>gd", vim.lsp.buf.definition, {})
-map("n", "<leader>gr", vim.lsp.buf.references, {})
-map("n", "<leader>gf", vim.lsp.buf.format, {}) -- requires none-ls
+-- Configure LSP keybinds
+map({ "n", "v" }, "<leader>f", vim.lsp.buf.format, {})
 map({ "n", "v" }, "<leader>r", vim.lsp.buf.rename, {})
 map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+
+-- Configure split window keybinds
+map({ "n", "v" }, "<C-h>", "<CMD>wincmd h<CR>", {})
+map({ "n", "v" }, "<C-j>", "<CMD>wincmd j<CR>", {})
+map({ "n", "v" }, "<C-k>", "<CMD>wincmd k<CR>", {})
+map({ "n", "v" }, "<C-l>", "<CMD>wincmd l<CR>", {})
+
+-- Configure moving selection 
+map("v", "J", ":m '>+1<CR>gv=gv", {})
+map("v", "K", ":m '<-2<CR>gv=gv", {})
+
+-- Configure indenting selection 
+map("v", "<", "<gv", {})
+map("v", ">", ">gv", {})
