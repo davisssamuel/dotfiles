@@ -13,12 +13,10 @@ return {
 		})
 
 		vim.lsp.enable({
-			-- "biome",
 			"clangd",
 			"gopls",
 			"lua_ls",
 			"pyright",
-			"tsserver"
 		})
 	end
 }
