@@ -11,7 +11,7 @@ vim.o.shiftround = true
 vim.o.autoindent = true
 vim.o.splitright = true
 
--- Configure LSP diagnostics
+-- Configure LSP diagnostic appearance
 vim.diagnostic.config({
 	virtual_lines = { current_line = true }
 })

@@ -1,29 +1,23 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
-		local lspconfig = require("lspconfig")
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-		lspconfig.biome.setup({
-			capabilities = capabilities
-		})
-
-		lspconfig.clangd.setup({
+		vim.lsp.config("*", {
 			capabilities = capabilities,
-			-- cmd = { "clangd", "--offset-encoding=utf-16" }
 		})
 
-		lspconfig.gopls.setup({
-			capabilities = capabilities
+		vim.lsp.config("tsserver", {
+			cmd = { "typescript-language-server", "--stdio" },
 		})
 
-		lspconfig.lua_ls.setup({
-			capabilities = capabilities
+		vim.lsp.enable({
+			-- "biome",
+			"clangd",
+			"gopls",
+			"lua_ls",
+			"pyright",
+			"tsserver"
 		})
-
-		lspconfig.pyright.setup({
-			capabilities = capabilities
-		})
-
 	end
 }

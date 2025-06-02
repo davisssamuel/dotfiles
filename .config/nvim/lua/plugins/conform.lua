@@ -5,7 +5,6 @@ return {
 			formatters_by_ft = {
 				c = "clang_format",
 				go = "gofmt",
-				js = "biome",
 				lua = "stylua",
 				python = "ruff_format",
 			},

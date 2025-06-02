@@ -4,18 +4,12 @@ return {
 	config = function()
 		require("oil").setup({
 			delete_to_trash = true,
-			view_options = {
-				show_hidden = true,
-			},
-			float = {
-				border = "single",
-			},
-			confirmation = {
-				border = "single"
-			},
-			progress = {
-				border = "single"
-			},
+			-- skip_confirm_for_simple_edits = true,
+			view_options = { show_hidden = true },
+			-- win_options = { winhighlight = "NormalFloat:Normal,FloatBorder:FloatBorder" },
+			float = { border = "single" },
+			confirmation = { border = "single" },
+			progress = { border = "single" },
 		})
 	end
 }
