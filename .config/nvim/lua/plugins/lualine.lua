@@ -4,6 +4,11 @@ return {
 	config = function()
 		local custom_theme = require("lualine.themes.auto")
 		custom_theme.normal.c.bg = "#22272E"
+		custom_theme.insert.c.bg = "#22272E"
+		custom_theme.visual.c.bg = "#22272E"
+		custom_theme.replace.c.bg = "#22272E"
+		custom_theme.command.c.bg = "#22272E"
+		custom_theme.inactive.c.bg = "#22272E"
 		require("lualine").setup({
 			options = {
 				theme = custom_theme,
