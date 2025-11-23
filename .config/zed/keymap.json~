@@ -1,0 +1,11 @@
+[
+  {
+    "bindings": {
+      // "space f": "editor::Format",
+      // "space r": "editor::Rename",
+      // "space c a": "editor::ToggleCodeActions",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-f": "buffer_search::Deploy"
+    }
+  }
+]
