@@ -6,7 +6,7 @@ zstyle ':vcs_info:git:*' stagedstr '+'
 zstyle ':vcs_info:git:*' unstagedstr '*'
 zstyle ':vcs_info:git:*' formats ' %F{green}(%b%u%c)%f'
 precmd() { vcs_info }
-setopt prompt_subst; PROMPT=$'\n''%n: %F{blue}%1~%f${vcs_info_msg_0_} %(?..%F{red})%#%f '
+setopt prompt_subst; PROMPT=$'\n''%m: %F{blue}%1~%f${vcs_info_msg_0_} %(?..%F{red})%#%f '
 
 # History
 HISTFILE=$HOME/.zsh_history
@@ -22,41 +22,38 @@ setopt hist_find_no_dups
 
 # Completions
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+autoload -Uz compinit
+compinit
 
 # Autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black'
 
 # Keybinds
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
-bindkey '^f' autosuggest-accept
-
-# Time command format
-export TIMEFMT=$'\nreal\t%*E'
+bindkey '^y' autosuggest-accept
 
 # Homebrew
 export PATH="/usr/local/sbin:$PATH"
-
-# ssh aliases
-source $HOME/.ssh-aliases
 
 # fzf 
 source <(fzf --zsh)
 export FZF_DEFAULT_COMMAND='fd --type=file'
 export FZF_DEFAULT_OPTS="--style=minimal"
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#656d76,bg:#ffffff,hl:#ffffff --color=fg+:#1F2328,bg+:#deeeff,hl+:#953800 --color=info:#9a6700,prompt:#0969da,pointer:#8250df --color=marker:#1a7f37,spinner:#24292f,header:#eff1f3'
+
+# ssh aliases
+source $HOME/.ssh-aliases
+
+# Time command format
+export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
 # Manpager
-# export MANPAGER='nvim +Man!'
-# export MANCOLOR=true
+export MANPAGER='nvim +Man!'
+export MANCOLOR=true
 
-# doom emacs
-export PATH="$HOME/.config/emacs/bin:$PATH"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# Android studio
-export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home -v 25)
+export PATH="$JAVA_HOME/bin:$PATH"
