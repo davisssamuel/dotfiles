@@ -42,5 +42,5 @@ export FZF_DEFAULT_OPTS='--style=minimal --info=hidden --color=light'
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
 # Manpager
-# export MANPAGER='nvim +Man!'
-# export MANCOLOR=true
+export MANPAGER='nvim +Man!'
+export MANCOLOR=true
