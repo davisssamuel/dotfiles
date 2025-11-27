@@ -17,7 +17,7 @@ mv ~/.zshrc ~/.zshrc.bak
 Next, clone this repo to your `$HOME` directory and `cd` into the dotfiles directory.
 
 ```
-git clone https://github.com/davisssamuel/dotfiles.git && cd ~/dotfiles
+git clone --recurse-submodules https://github.com/davisssamuel/dotfiles.git && cd ~/dotfiles
 ```
 
 Finally, use Stow to create symlinks to these dotfiles.
