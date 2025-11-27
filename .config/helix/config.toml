@@ -1,9 +1,7 @@
-theme = "github_dark_dimmed"
+theme = "github_light"
 
 [editor]
-line-number = "relative"
 true-color = true
-# rulers = [ 80 ]
 end-of-line-diagnostics = "hint"
 
 [editor.cursor-shape]
