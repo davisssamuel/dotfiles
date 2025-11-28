@@ -1,5 +1,5 @@
 # Theme and Font
-theme = GitHub Dark Dimmed
+theme = GitHub Light Default
 font-family = CommitMono
 font-feature = -calt, -liga, -dlig
 
@@ -8,11 +8,12 @@ window-width = 80
 window-height = 24
 window-padding-x = 20
 window-padding-y = 10
-adjust-cell-height = 20%
-adjust-cursor-height = 20%
+adjust-cell-height = 10%
+adjust-cursor-height = 10%
 
 # Cursor
 cursor-style = block
 cursor-style-blink = false
-cursor-color = #8A949E
-shell-integration-features = no-cursor
+cursor-color = cell-foreground
+cursor-text = cell-background
+shell-integration-features = no-cursor, ssh-env 
