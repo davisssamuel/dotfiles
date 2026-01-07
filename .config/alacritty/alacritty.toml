@@ -1,0 +1,36 @@
+[general]
+live_config_reload = true
+import = ["./github_light.toml"]
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "CommitMono" 
+style  = "Regular"
+
+[font.bold]
+style = "Regular"
+
+[font.italic]
+style = "Regular"
+
+[window]
+decorations   = "full"
+option_as_alt = "both"
+dynamic_padding = true
+
+[window.dimensions]
+columns = 80
+lines   = 24
+
+[window.padding]
+x = 20 
+y = 10
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+  { key = "Tab",   mods = "Control", action = "SelectNextTab" }
+]
