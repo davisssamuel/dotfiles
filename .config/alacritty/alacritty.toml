@@ -6,7 +6,7 @@ import = ["./github_light.toml"]
 size = 13.0
 
 [font.normal]
-family = "CommitMono" 
+family = "CommitMono Nerd Font" 
 style  = "Regular"
 
 [font.bold]
