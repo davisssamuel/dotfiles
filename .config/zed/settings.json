@@ -1,0 +1,30 @@
+{
+  // Keymap
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "format_on_save": "off",
+
+  // Interface
+  "theme": "One Light",
+  "title_bar": { "show_branch_icon": false },
+  "tab_bar": { "show_nav_history_buttons": false },
+  "tabs": { "file_icons": true },
+  "git": { "git_gutter": "tracked_files" },
+
+  // Font
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 15.0,
+  "buffer_font_family": "CommitMono",
+  "buffer_font_size": 13.0,
+
+  // Cursor
+  "cursor_blink": false,
+  "current_line_highlight": "all",
+
+  // Other
+  "disable_ai": true,
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  }
+}
