@@ -1,9 +1,11 @@
 # Theme and Font
-theme = GitHub Light Default
-font-family = CommitMono
+# theme = GitHub Light Default
+theme = Atom One Light
+font-family = CommitMono Nerd Font
 font-feature = -calt, -liga, -dlig
 
 # Window
+window-decoration = true
 window-width = 80
 window-height = 24
 window-padding-x = 10
