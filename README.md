@@ -37,10 +37,10 @@ stow --adopt .
 If you are using bash and want the same prompt, add the following to your `.bashrc`.
 
 ```sh
-if [ ! -f $HOME/.git-prompt.sh ]; then
-    curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > $HOME/.git-prompt.sh
+if [ ! -f $HOME/.git_prompt.sh ]; then
+    curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > $HOME/.git_prompt.sh
 fi
-source $HOME/.git-prompt.sh
+source $HOME/.git_prompt.sh
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_UNTRACKEDFILES=true
