@@ -28,7 +28,7 @@ compinit
 # Autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 
 # Keybinds
 bindkey '^p' history-search-backward
@@ -56,3 +56,8 @@ export MANCOLOR=true
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home -v 25)
 export PATH="$JAVA_HOME/bin:$PATH"
+
+# Guile
+# export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
+# export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
+# export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
