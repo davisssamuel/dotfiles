@@ -8,3 +8,4 @@ set autoindent
 set splitright
 filetype on
 syntax on
+map - :Ex<CR>
