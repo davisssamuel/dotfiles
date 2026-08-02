@@ -1,15 +1,29 @@
 {
-  // Keymap
-  "base_keymap": "VSCode",
-  "vim_mode": true,
-  "format_on_save": "off",
-
   // Interface
   "theme": "One Light",
-  "title_bar": { "show_branch_icon": false },
+  "title_bar": {},
   "tab_bar": { "show_nav_history_buttons": false },
   "tabs": { "file_icons": true },
   "git": { "git_gutter": "tracked_files" },
+  "wrap_guides": [100],
+
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
 
   // Font
   "ui_font_family": ".SystemUIFont",
@@ -21,10 +35,27 @@
   "cursor_blink": false,
   "current_line_highlight": "all",
 
+  // Keymap
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "format_on_save": "off",
+
   // Other
-  "disable_ai": true,
+  "disable_ai": false,
   "telemetry": {
     "metrics": false,
-    "diagnostics": false
-  }
+    "diagnostics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+
+  // LSP
+  // "lsp": {
+  //   "jdtls": {
+  //     "settings": {
+  //       "java.project.sourcePaths": ["src"]
+  //     }
+  //   }
+  // }
 }
