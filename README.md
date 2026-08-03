@@ -39,6 +39,8 @@ stow -D .
 If you are using bash and want the same prompt, add the following to your `.bashrc`:
 
 ```sh
+# .bashrc
+
 if [ ! -f $HOME/.git_prompt.sh ]; then
     curl --fail --silent --show-error --connect-timeout 3 \
         https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh \
@@ -55,6 +57,8 @@ PS1=$'\n''\u: \[\e[34m\]\W$(__git_ps1 " \[\e[32m\](%s\[\e[32m\])") \[\e[39m\]\$ 
 You may also need to source your `.bashrc` file in `.bash_profile` to ensure this always works:
 
 ```sh
+# .bash_profile
+
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
