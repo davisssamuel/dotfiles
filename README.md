@@ -46,7 +46,7 @@ if [ ! -f $HOME/.git_prompt.sh ]; then
         https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh \
         -o $HOME/.git_prompt.sh
 fi
-source $HOME/.git_prompt.sh
+source $HOME/.git_prompt.sh 2>/dev/null
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_UNTRACKEDFILES=true
