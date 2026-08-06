@@ -8,7 +8,7 @@ export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_UNTRACKEDFILES=true
 export GIT_PS1_STATESEPARATOR=''
-PS1=$'\n''\u: \[\e[34m\]\W$(__git_ps1 " \[\e[32m\](%s\[\e[32m\])") \[\e[39m\]\$ '
+PS1=$'\n''\u@\h: \[\e[34m\]\W$(__git_ps1 " \[\e[32m\](%s\[\e[32m\])") \[\e[39m\]\$ '
 
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND='fd --type=file'
