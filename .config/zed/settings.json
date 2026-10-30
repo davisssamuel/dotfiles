@@ -1,47 +1,37 @@
 {
-  // Interface
-  "theme": "One Light",
-  "title_bar": {},
-  "tab_bar": { "show_nav_history_buttons": false },
-  "tabs": { "file_icons": true },
-  "git": { "git_gutter": "tracked_files" },
-  "wrap_guides": [100],
-
-  "project_panel": {
-    "dock": "left",
-  },
-  "outline_panel": {
-    "dock": "left",
-  },
-  "collaboration_panel": {
-    "dock": "left",
-  },
-  "agent": {
-    "dock": "right",
-    "favorite_models": [],
-    "model_parameters": [],
-  },
-  "git_panel": {
-    "dock": "left",
-  },
-
-  // Font
+  // ───────────── Appearance ─────────────
+  "theme": "One Dark",
   "ui_font_family": ".SystemUIFont",
   "ui_font_size": 15.0,
-  "buffer_font_family": "CommitMono",
+  "buffer_font_family": "Fira Code",
   "buffer_font_size": 13.0,
+  // Alternatives:
+  // "buffer_font_family": "CommitMono", "buffer_font_size": 13.0
+  // "buffer_font_family": "Iosevka SS08", "buffer_font_size": 15.0
 
-  // Cursor
+  // ───────────── Editor ─────────────
   "cursor_blink": false,
   "current_line_highlight": "all",
-
-  // Keymap
-  "base_keymap": "VSCode",
-  "vim_mode": true,
+  "wrap_guides": [100],
   "format_on_save": "off",
 
-  // Other
-  "disable_ai": false,
+  // ───────────── Keyboard ─────────────
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+
+  // ───────────── Workspace / UI ─────────────
+  "cli_default_open_behavior": "existing_window",
+  "tab_bar": { "show_nav_history_buttons": false },
+  "tabs": { "file_icons": true },
+  "project_panel": {
+    "dock": "left",
+    "git_status_indicator": true,
+  },
+  "git_panel": { "dock": "left" },
+  "git": { "git_gutter": "tracked_files" },
+
+  // ───────────── AI / Privacy / Trust ─────────────
+  "disable_ai": true,
   "telemetry": {
     "metrics": false,
     "diagnostics": false,
@@ -49,13 +39,4 @@
   "session": {
     "trust_all_worktrees": true,
   },
-
-  // LSP
-  // "lsp": {
-  //   "jdtls": {
-  //     "settings": {
-  //       "java.project.sourcePaths": ["src"]
-  //     }
-  //   }
-  // }
 }

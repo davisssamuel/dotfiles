@@ -1,11 +1,12 @@
 [
   {
+    "context": "vim_mode == normal", // work for editor and assistant panel
     "bindings": {
-      // "space f": "editor::Format",
-      // "space r": "editor::Rename",
-      // "space c a": "editor::ToggleCodeActions",
+      "space f": "editor::Format",
+      "space r": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions",
       "ctrl-p": "file_finder::Toggle",
-      "ctrl-f": "buffer_search::Deploy"
-    }
-  }
+      "ctrl-f": "buffer_search::Deploy",
+    },
+  },
 ]
