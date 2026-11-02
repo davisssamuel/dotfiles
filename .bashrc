@@ -1,5 +1,5 @@
 if [ ! -f $HOME/.git_prompt.sh ]; then
-    curl --fail --silent --show-error --connect-timeout 3 \
+    curl -sSf --connect-timeout 3 \
         https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh \
         -o $HOME/.git_prompt.sh
 fi
