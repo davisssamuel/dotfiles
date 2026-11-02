@@ -24,40 +24,35 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 autoload -Uz compinit
 compinit
+autoload -Uz bashcompinit
+bashcompinit
 
 # Autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#5c6370'
 
 # Keybinds
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^y' autosuggest-accept
 
-# Homebrew
-export PATH="/usr/local/sbin:$PATH"
-
-# fzf 
-source <(fzf --zsh)
-export FZF_DEFAULT_COMMAND='fd --type=file'
-export FZF_DEFAULT_OPTS='--style=minimal --info=hidden --color=light'
-
-# ssh aliases
-source $HOME/.ssh-aliases
-
-# Time command format
+# Time format
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
 # Manpager
 export MANPAGER='nvim +Man!'
 export MANCOLOR=true
 
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home -v 25)
-export PATH="$JAVA_HOME/bin:$PATH"
+# Fzf
+source <(fzf --zsh)
+export FZF_DEFAULT_COMMAND='fd --type=file'
+export FZF_DEFAULT_OPTS='--style=minimal --info=hidden --color=bw'
 
-# Guile
-# export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
-# export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
-# export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
+# Aliases
+alias fman="compgen -c | fzf | xargs man"
+alias fps="ps -o pid,tty,comm | fzf -m --header=\"Select process to kill\" --header-lines=1 | awk '{print \$1}' | xargs kill"
+
+# Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk17-temurin/Contents/Home
+export PATH="$JAVA_HOME/bin:$PATH"
