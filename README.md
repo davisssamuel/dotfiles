@@ -1,49 +1,43 @@
-# Requirements
+My dotfiles, managed with Stow. Made for my 2020 Intel MacBook Pro.
 
-To use these dotfiles, you need [git](https://git-scm.com/) and [stow](https://www.gnu.org/software/stow/) installed.
+---
+
+To use these dotfiles, you need [Git](https://git-scm.com/) and [Stow](https://www.gnu.org/software/stow/) installed.
+
+To install with Homebrew, use:
 
 ```
 brew install git stow
 ```
 
-# Installation
-
-First, backup (recommended) or remove your current dotfiles, e.g. backing up `.zshrc`.
+To install with MacPorts, use: 
 
 ```
-mv ~/.zshrc ~/.zshrc.bak
+sudo port install git stow
 ```
 
-Next, clone this repo to your `$HOME` directory and `cd` into the dotfiles directory.
+---
+
+Clone this repo to your `$HOME` directory and `cd` into it:
 
 ```
-git clone --recurse-submodules https://github.com/davisssamuel/dotfiles.git && cd ~/dotfiles
+git clone --recurse-submodules https://github.com/davisssamuel/dotfiles.git && cd dotfiles
 ```
 
-Finally, use Stow to create symlinks to these dotfiles.
+Use Stow to create symlinks to these dotfiles:
 
 ```
 stow .
 ```
 
-NOTE: if you have dotfiles that were not backed-up or removed, Stow may not create symlinks and throw a conflict error. Use the adopt flag to override this repo's dotfiles with your own.
+If you have existing dotfiles, Stow will be unable to create symlinks if they conflict with those in this repo. To deconflict this, override this repo's dotfiles with your own using: 
 
 ```
 stow --adopt .
 ```
 
-# Options
+To remove symlinks created by Stow, use:
 
-If you are using bash and want the same prompt, add the following to your `.bashrc`.
-
-```sh
-if [ ! -f $HOME/.git-prompt.sh ]; then
-    curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > $HOME/.git-prompt.sh
-fi
-source $HOME/.git-prompt.sh
-export GIT_PS1_SHOWCOLORHINTS=true
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_UNTRACKEDFILES=true
-export GIT_PS1_STATESEPARATOR=''
-PS1=$'\n''\u: \e[34m\W$(__git_ps1 " \e[32m(%s\e[32m)") \e[39m\$ '
+```
+stow -D .
 ```
