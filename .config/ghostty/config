@@ -1,8 +1,6 @@
-# Theme and Font
-# theme = GitHub Light Default
-theme = Atom One Light
-font-family = CommitMono Nerd Font
-font-feature = -calt, -liga, -dlig
+# General
+theme = Atom One Dark 
+font-family = Fira Code
 
 # Window
 window-decoration = true
@@ -18,4 +16,4 @@ cursor-style = block
 cursor-style-blink = false
 cursor-color = cell-foreground
 cursor-text = cell-background
-shell-integration-features = no-cursor, ssh-env 
+shell-integration-features = no-cursor, ssh-env, ssh-terminfo
